@@ -14,9 +14,9 @@ public class Bob {
         System.out.println("");
 
         do {
-            System.out.print("Would you like to continue? Y/N ");
+            System.out.print("Would you like to continue? Y/N \n");
 
-            userChoice = scan.next();
+            userChoice = scan.nextLine();
 
             if (userChoice.equalsIgnoreCase("y")) {
                 System.out.println("Welcome to talky bobby. Go ahead, ask him a question.");
