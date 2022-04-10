@@ -23,29 +23,49 @@ public class MethodsExercises {
 
 
         /* Third Exercise */
-        String factorialContinue = "";
+//        String factorialContinue = "";
+//
+//        do {
+//
+//            System.out.print("Would you like to try the factorial program? Y/N: ");
+//
+//            factorialContinue = scan.next();
+//
+//            if (factorialContinue.equalsIgnoreCase("y")) {
+//
+//                System.out.print("Enter a number between 1 and 10 again please: ");
+//
+//                long userNum = scan.nextInt();
+//
+//                checkInteger(userNum);
+//
+//            } else {
+//
+//                System.out.println("Goodbye!");
+//
+//            }
+//
+//        } while (factorialContinue.equalsIgnoreCase("y"));
+
+
+        /* Roll Dice Loop */
+        String runProgram = "";
 
         do {
 
-            System.out.print("Would you like to try the factorial program? Y/N: ");
+            System.out.print("Would you like to run the dice program? y/n: ");
+            runProgram = scan.next();
 
-            factorialContinue = scan.next();
+            System.out.println("");
 
-            if (factorialContinue.equalsIgnoreCase("y")) {
+            System.out.print("Please enter the number of sides for a pair of dice: ");
+            int diceSides = scan.nextInt();
 
-                System.out.print("Enter a number between 1 and 10 again please: ");
+            System.out.println("Roll the dice! Type \"roll\": ");
+            String rollDice = scan.next();
 
-                long userNum = scan.nextInt();
 
-                checkInteger(userNum);
-
-            } else {
-
-                System.out.println("Goodbye!");
-
-            }
-
-        } while (factorialContinue.equalsIgnoreCase("y"));
+        } while (runProgram.equalsIgnoreCase("y"));
 
 
     }
