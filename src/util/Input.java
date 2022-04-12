@@ -11,9 +11,9 @@ public class Input {
 
         Input i1 = new Input();
 
-        i1.getString("Enter a string: ");
+        System.out.println(i1.getString("Enter a string: "));
 
-        i1.getDouble(5.5999, 10.5999)
+        i1.getDouble(5.5999, 10.5999);
 
     }
 
@@ -91,8 +91,8 @@ public class Input {
         }
     }
 
-    public double getDouble() {
-
+    public double getDouble(String prompt) {
+        System.out.println(prompt);
         return this.scanner.nextDouble();
     }
 
