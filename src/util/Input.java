@@ -6,6 +6,9 @@ public class Input {
 
     /* MAIN METHOD */
     public static void main(String[] args) {
+
+        //TODO: Call/test all methods for exercise completion
+
         Input i1 = new Input();
 
         i1.getString("Enter a string: ");
