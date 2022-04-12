@@ -2,6 +2,7 @@ import java.util.Scanner;
 
 public class MethodsExercises {
 
+    //TODO: FINISH 5TH EXERCISE
 
     public static void main(String[] args) {
 
