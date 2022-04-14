@@ -13,6 +13,7 @@ public class Rectangle {
         this.width = width;
     }
 
+
     /* CUSTOM METHODS */
     public int getArea(int length, int width) {
         return width * length;
