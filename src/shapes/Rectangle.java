@@ -15,12 +15,12 @@ public class Rectangle {
 
 
     /* CUSTOM METHODS */
-    public int getArea(int length, int width) {
-        return width * length;
+    public int getArea() {
+        return this.width * this.length;
     }
 
-    public int getPerimeter(int length, int width) {
-        return 2 * (length + width);
+    public int getPerimeter() {
+        return 2 * (this.length + this.width);
     }
 
 

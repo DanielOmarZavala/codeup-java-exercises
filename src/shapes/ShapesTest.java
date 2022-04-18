@@ -9,14 +9,15 @@ public class ShapesTest {
         Rectangle box2 = new Square(5);
 
         /* RECTANGLE CODE EXAMINATIONS */
-        System.out.println("Start of Rectangle Tests: \n" + "Area: " + box1.getPerimeter(box1.length, box1.width));
-        System.out.println("Perimeter: " + box1.getArea(box1.length, box1.width));
+        System.out.println("Start of Rectangle Tests: \n" + "Perimeter: " + box1.getPerimeter());
+        System.out.println("Area: " + box1.getArea());
 
         System.out.println("");
 
         /* SQUARE CODE EXAMINATIONS */
-        System.out.println("Start of Square Tests: \n" + "Area: " + box2.getPerimeter(box2.length, box2.width));
-        System.out.println("Perimeter: " + box2.getArea(box2.length, box2.width));
+        System.out.println("Start of Square Tests: \n" + "Perimeter: " + box2.getPerimeter());
+        System.out.println("Area: " + box2.getArea());
+        System.out.println(box2.getArea());
 
     }
 }
