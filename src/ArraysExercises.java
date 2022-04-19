@@ -18,10 +18,23 @@ public class ArraysExercises {
 
             System.out.println(person.getName());
         }
+
+        peoples = addPerson(peoples, new Person("New Person"));
+        peoples = addPerson(peoples, new Person("Another"));
+
+        System.out.println("PRINTING AFTER ADD");
+
+        for(Person person : peoples) {
+            System.out.println(person.getName());
+        }
     }
 
     public static Person[] addPerson(Person[] personArr, Person personToAdd) {
-        Person[]
+        Person[] newArr = Arrays.copyOf(personArr, personArr.length + 1);
+
+        newArr[newArr.length - 1] = personToAdd;
+
+        return newArr;
     }
 
 //    class Person {
