@@ -4,9 +4,11 @@ import java.util.ArrayList;
 
 public class Student {
 
+    /* FIELDS */
     private String name;
     private ArrayList<Integer> grades = new ArrayList<>();
 
+    /* CONSTRUCTORS */
     public Student(String name) {
 
         this.name = name;
@@ -18,12 +20,12 @@ public class Student {
 
     // returns the student's name
     public String getName() {
-        return name;
+        return this.name;
     }
 
     // adds the given grade to the grades property
     public void addGrade(int grade) {
-        grades.add(grade);
+        this.grades.add(grade);
     }
 
     // returns the average of the students grades
