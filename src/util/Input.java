@@ -70,6 +70,8 @@ public class Input {
         }
     }
 
+    //TODO: FIX THIS TRY/CATCH AND UTILIZE FORTRAN EXAMPLE
+    /* TRY/CATCH */
     public static int getInt() {
 
 //        return this.scanner.nextInt();
@@ -99,6 +101,9 @@ public class Input {
         }
     }
 
+
+    //TODO: FIX THIS TRY/CATCH AND UTILIZE FORTRAN EXAMPLE
+    /* TRY/CATCH */
     public double getDouble(String prompt) {
         System.out.println(prompt);
 //        return this.scanner.nextDouble();
