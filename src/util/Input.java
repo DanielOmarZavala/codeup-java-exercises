@@ -29,7 +29,7 @@ public class Input {
 
 
     /* CUSTOM METHODS */
-    public String getString(String prompt) {
+    public static String getString(String prompt) {
 
         System.out.println(prompt);
 
@@ -70,9 +70,17 @@ public class Input {
         }
     }
 
-    public int getInt() {
+    public static int getInt() {
 
-        return this.scanner.nextInt();
+//        return this.scanner.nextInt();
+
+        try{
+            return Integer.parseInt(getString("Enter an integer: "));
+
+        }catch(NumberFormatException ex) {
+            System.out.println(ex.getMessage());
+            return getInt();
+        }
     }
 
     public double getDouble(double min, double max) {
@@ -93,7 +101,15 @@ public class Input {
 
     public double getDouble(String prompt) {
         System.out.println(prompt);
-        return this.scanner.nextDouble();
+//        return this.scanner.nextDouble();
+
+        try {
+            return Double.parseDouble(getString("Enter an Integer: "));
+
+        } catch(NumberFormatException ex) {
+            System.out.println(ex.getMessage());
+            return getDouble(prompt);
+        }
     }
 
 }
