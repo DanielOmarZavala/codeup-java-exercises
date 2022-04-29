@@ -19,6 +19,7 @@ public class ExceptionFunTime {
     }
 
     // TODO: how can we handle the possible InputMismatchException and allow the user to enter their integer again?
+    // Find solution
     private static void method3(Scanner scanner) {
         try {
             System.out.println("enter an integer");
